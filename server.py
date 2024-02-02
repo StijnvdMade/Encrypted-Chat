@@ -4,6 +4,7 @@ File: server.py
 Author: Stijn van der Made
 Studentnummer: 500908262
 Date: 02/02/2024
+GitHub: https://github.com/StijnvdMade/Encrypted-Chat.git
 Applied Cryptography 2023-2024
 """
 import socket
@@ -12,12 +13,6 @@ from Crypto.Cipher import AES
 from cryptography.hazmat.primitives import serialization
 from cryptography.hazmat.backends import default_backend
 from cryptography import x509
-
-# TODO: fix chat - done
-# TODO: server ontsleuteld berichten en laat caps zien - done
-# TODO: Client hello server - done
-# TODO: certificaten regelen voor client en server om te verifiëren dat ze zijn wie ze zeggen dat ze zijn - done
-# TODO: Langere keys voor encryptie 
 
 def load_certificate(cert_file):
     with open(cert_file, 'rb') as f:

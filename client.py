@@ -4,6 +4,7 @@ File: client.py
 Author: Stijn van der Made
 Studentnummer: 500908262
 Date: 02/02/2024
+GitHub: https://github.com/StijnvdMade/Encrypted-Chat.git
 Applied Cryptography 2023-2024
 """
 import socket
@@ -84,7 +85,7 @@ def main():
     shared_secret = hashlib.sha256(shared_secret).digest()
 
     print("Using AES for encryption")
-    
+
     while True:
         message = input("Enter message: ")
         if message == "exit":
@@ -98,8 +99,6 @@ def main():
         response = client_socket.recv(1024)
         decrypted_response = decrypt_message(response, shared_secret)
         print(f"Received: {decrypted_response}")
-
-    
 
 if __name__ == "__main__":
     main()

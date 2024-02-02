@@ -41,3 +41,7 @@ De client zal nu opstarten en verbinding maken met de server. Wanneer de client 
 - [x] Diffie Hellman sleuteluitwisseling
 - [x] Verbinding tussen sockets
 - [x] Server-Hello en Client-Hello
+
+### Opmerkingen
+- Het is mij niet gelukt de Diffie Hellman methode te implementeren in de Server-Hello en Client-Hello. De sleuteluitwisseling gebeurt nu na de handshake. Dit is omdat het mij niet lukt om de variabelen globaal aan te maken. 
+- De waardes voor de Diffie Hellman methode zijn hard gecodeerd. Deze kunnen aangepast worden in de code, er staan commentaarregels bij waar de waardes aangepast kunnen worden en hoe dit moet.  
